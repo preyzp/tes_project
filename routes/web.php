@@ -38,6 +38,9 @@ Route::get('/backend', function () {
     return view('backend');
 });
 
-Route::get('/jawabanFE', [CourrierController::class, 'getData']);
+Route::get('/courrierView', [CourrierController::class, 'getData']);
+Route::get('/facility',[CourrierController::class, 'formindex']);
+Route::post('/facilitysave',[CourrierController::class, 'save']);
+Route::get('/facilityview',[CourrierController::class, 'index'])->name('facilitydata');
 
 

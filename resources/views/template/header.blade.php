@@ -63,10 +63,22 @@
                             <span class="nk-menu-text">Back End Dev</span>
                         </a>
                     </li>
-                    <li class="nk-menu-item">
-                        <a href="{{ url('/jawabanFE') }}" class="nk-menu-link">
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
                             <span class="nk-menu-text">Jawaban FE</span>
                         </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{url('/courrierView')}}" class="nk-menu-link">
+                                    <span class="nk-menu-text">Data View Courrier</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{url('/facility')}}" class="nk-menu-link">
+                                    <span class="nk-menu-text">Facility</span>
+                                </a>
+                            </li>
+                        </ul><!-- .nk-menu-sub -->
                     </li>
                 </ul><!-- .nk-menu -->
             </div><!-- .nk-header-menu -->
